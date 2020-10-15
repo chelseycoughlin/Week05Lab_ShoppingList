@@ -14,8 +14,10 @@
     </head>
     <body>
         <h1> Shopping List </h1>
+        
         <p> Hello <c:out value="${user}"/>.</p>
-        <p><a href="/shoppinglist?action=logout">Logout</a></p>
+        <p><a href="?action=logout">Logout</a></p>
+        <input type="hidden" name="action" value="logout">
         
         <form action="" method="POST">
             <h2>Add Item</h2>
@@ -36,6 +38,8 @@
         </ul>
             <input type="submit" value="Delete">
             <input type="hidden" name="action" value="delete">
+            <br>
+            ${info}
         </form>
     </body>
 </html>

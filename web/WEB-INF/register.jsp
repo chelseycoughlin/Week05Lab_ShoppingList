@@ -13,10 +13,13 @@
     </head>
     <body>
         <h1>Shopping List</h1>
+        
         <form action="ShoppingList" method="POST">
             <label for="user">Username: </label><input type="text" name="user">
             <input type="hidden" name="action" value="register">
             <input type="submit" value="Register name">
+            <br>
+            ${message}
         </form>
     </body>
 </html>
